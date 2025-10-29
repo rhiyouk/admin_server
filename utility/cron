@@ -8,3 +8,6 @@ Rollback (si besoin)
 sudo chown -R user:user /home/user/admin/logs /home/user/admin/backups /home/user/admin/scripts
 sudo chmod -R 755 /home/user/admin/logs /home/user/admin/backups
 sudo chmod 755 /home/user/admin/scripts/*.sh
+
+#INSTALLATION UFW FIREWALL
+sudo apt update && sudo apt install ufw -y

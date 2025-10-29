@@ -150,3 +150,27 @@ Si un dossier manque, le script le signale dans le log.
 1. Rendre exécutable :
    ```bash
    sudo chmod +x /home/riuk/admin/security/secure_permissions.sh
+
+
+## 🔥 Jour 2 – Pare-feu et verrouillage SSH local
+
+### 🎯 Objectif :
+Mettre en place une sécurité réseau basique avec **UFW** (pare-feu Linux) et bloquer les connexions SSH externes pour simuler un serveur isolé.
+
+### ⚙️ Fichier :
+`/home/riuk/admin/scripts/setup_firewall.sh`
+
+### 🧠 Fonctionnalités :
+- Active automatiquement le pare-feu UFW  
+- Bloque toutes les connexions entrantes sauf :
+  - les connexions locales (`127.0.0.1`)
+  - HTTP (`80/tcp`)
+  - HTTPS (`443/tcp`)
+- Interdit les connexions SSH externes (`22/tcp`)
+- Journalise les actions dans `logs/security_audit.log`
+
+### 📦 Commandes utiles :
+```bash
+sudo ufw status verbose     # Voir les règles actives
+sudo ufw reset              # Réinitialiser le pare-feu
+sudo ufw disable            # Désactiver le pare-feu
