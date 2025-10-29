@@ -116,3 +116,37 @@ Exemple : sauvegarde quotidienne à 2h du matin
 📜 Licence
 
 Ce projet est distribué sous licence MIT — vous êtes libre de le modifier et de le réutiliser avec mention de l’auteur original.
+
+Mise a jour 
+## But
+Sécuriser les dossiers sensibles du projet `/home/riuk/admin/` (logs, backups, scripts) et journaliser les actions de sécurisation.
+
+## Emplacement
+Script principal :
+/home/riuk/admin/security/secure_permissions.sh
+
+Logs :
+/home/riuk/admin/logs/security.log
+
+## Prérequis
+- Sudo / accès root.
+- Structure minimale existante :
+  - /home/riuk/admin/scripts/
+  - /home/riuk/admin/logs/
+  - /home/riuk/admin/backups/
+
+Si un dossier manque, le script le signale dans le log.
+
+## Fonctionnalités
+- Crée le fichier de log `security.log` si absent.
+- Applique `chmod 700` et `chown root:root` sur :
+  - /home/riuk/admin/logs
+  - /home/riuk/admin/backups
+- Protège les scripts Bash : `chmod 700` et `chown root:root` sur `/home/riuk/admin/scripts/*.sh`
+- Écrit une entrée horodatée dans `security.log` pour chaque action.
+- Affiche un retour en couleur dans la console.
+
+## Usage
+1. Rendre exécutable :
+   ```bash
+   sudo chmod +x /home/riuk/admin/security/secure_permissions.sh

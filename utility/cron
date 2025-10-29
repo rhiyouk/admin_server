@@ -2,4 +2,9 @@
 #COMMANDE POUR FAIRE UNE SAUVEGARDE CHAQUE JOUR 
 
 0 1 * * * ~/admin/scripts/backup_users.sh >> ~/admin/logs/backup.log 2>&1
+0 3 * * 0 /home/user/admin/security/secure_permissions.sh >> /home/user/admin/logs/security.log 2>&1
 
+Rollback (si besoin)
+sudo chown -R user:user /home/user/admin/logs /home/user/admin/backups /home/user/admin/scripts
+sudo chmod -R 755 /home/user/admin/logs /home/user/admin/backups
+sudo chmod 755 /home/user/admin/scripts/*.sh

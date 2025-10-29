@@ -1,0 +1,19 @@
+====== 2025-10-29 13:09:24 ======
+2025-10-29 13:09:24 - Répertoire sécurisé : /home/riuk/admin/users/admin
+2025-10-29 13:09:24 - Répertoire sécurisé : /home/riuk/admin/configs
+2025-10-29 13:09:24 - Répertoire sécurisé : /home/riuk/admin/backups
+2025-10-29 13:09:24 - Répertoire sécurisé : /home/riuk/admin/logs
+2025-10-29 13:09:24 - Script sécurisé : /home/riuk/admin/scripts/add_user.sh
+2025-10-29 13:09:24 - Script sécurisé : /home/riuk/admin/scripts/clean_old_backups.sh
+2025-10-29 13:09:24 - Script sécurisé : /home/riuk/admin/scripts/monitor_users.sh
+2025-10-29 13:09:24 - Script sécurisé : /home/riuk/admin/scripts/remove_user.sh
+====== 2025-10-29 13:35:40 ======
+2025-10-29 13:35:40 - Répertoire sécurisé : /home/riuk/admin/users/admin
+2025-10-29 13:35:40 - Répertoire sécurisé : /home/riuk/admin/configs
+2025-10-29 13:35:40 - Répertoire sécurisé : /home/riuk/admin/backups
+2025-10-29 13:35:40 - Répertoire sécurisé : /home/riuk/admin/logs
+2025-10-29 13:35:40 - Script sécurisé : /home/riuk/admin/scripts/add_user.sh
+2025-10-29 13:35:40 - Script sécurisé : /home/riuk/admin/scripts/backup_users.sh
+2025-10-29 13:35:40 - Script sécurisé : /home/riuk/admin/scripts/clean_old_backups.sh
+2025-10-29 13:35:40 - Script sécurisé : /home/riuk/admin/scripts/monitor_users.sh
+2025-10-29 13:35:40 - Script sécurisé : /home/riuk/admin/scripts/remove_user.sh
