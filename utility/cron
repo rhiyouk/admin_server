@@ -1,0 +1,5 @@
+#CRON AUTOMATISATION
+#COMMANDE POUR FAIRE UNE SAUVEGARDE CHAQUE JOUR 
+
+0 1 * * * ~/admin/scripts/backup_users.sh >> ~/admin/logs/backup.log 2>&1
+

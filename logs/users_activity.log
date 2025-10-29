@@ -1,0 +1,21 @@
+Tue Oct 28 05:18:48 PM EDT 2025: Utilisateur andre ajouté.
+/bin/sh: 1: /home/riuk/admin/scripts/backup_users.sh: Permission denied
+/bin/sh: 1: /home/riuk/admin/scripts/backup_users.sh: Permission denied
+/bin/sh: 1: /home/riuk/admin/scripts/backup_users.sh: Permission denied
+/bin/sh: 1: /home/riuk/admin/scripts/backup_users.sh: Permission denied
+/bin/sh: 1: /home/riuk/admin/scripts/backup_users.sh: Permission denied
+Tue Oct 28 05:51:28 PM EDT 2025: Utilisateur eliya ajouté.
+/home/riuk/admin/scripts/backup_users.sh: line 24: `user in "$USERS_PATH"/*; do'[32mSauvegarde de l'utilisateur andre réussie : /home/riuk/admin/backups/andre_backup_20251028_182201.tar.gz[0m
+[32mSauvegarde de l'utilisateur eliya réussie : /home/riuk/admin/backups/eliya_backup_20251028_182201.tar.gz[0m
+[32mSauvegarde de l'utilisateur Rich réussie : /home/riuk/admin/backups/Rich_backup_20251028_182201.tar.gz[0m[32mSauvegarde de l'utilisateur andre réussie : /home/riuk/admin/backups/andre_backup_20251028_182301.tar.gz[0m
+[32mSauvegarde de l'utilisateur eliya réussie : /home/riuk/admin/backups/eliya_backup_20251028_182301.tar.gz[0m
+[32mSauvegarde de l'utilisateur Rich réussie : /home/riuk/admin/backups/Rich_backup_20251028_182301.tar.gz[0m
+Tue Oct 28 06:54:54 PM EDT 2025: Utilisateur Richs supprimé.
+Tue Oct 28 06:55:02 PM EDT 2025: Utilisateur Rich supprimé.
+Tue Oct 28 06:58:50 PM EDT 2025: Utilisateur andre supprimé.
+Tue Oct 28 06:58:50 PM EDT 2025: Répertoire de l'utilisateur andre supprimé.
+Tue Oct 28 07:00:44 PM EDT 2025: Utilisateur eliya supprimé.
+Tue Oct 28 07:00:44 PM EDT 2025: Répertoire de l'utilisateur eliya supprimé.
+Tue Oct 28 07:01:38 PM EDT 2025: Utilisateur eliya ajouté.
+Tue Oct 28 07:01:51 PM EDT 2025: Utilisateur eliya supprimé.
+Tue Oct 28 07:01:51 PM EDT 2025: Répertoire de l'utilisateur eliya supprimé.
