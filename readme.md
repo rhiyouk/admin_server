@@ -174,3 +174,33 @@ Mettre en place une sécurité réseau basique avec **UFW** (pare-feu Linux) et 
 sudo ufw status verbose     # Voir les règles actives
 sudo ufw reset              # Réinitialiser le pare-feu
 sudo ufw disable            # Désactiver le pare-feu
+
+## 🧠 Jour 3 – Supervision système (Monitoring CPU, RAM, disque)
+
+### 🎯 Objectif :
+Créer un outil de supervision simple pour surveiller les ressources critiques du serveur :
+- CPU
+- RAM
+- Disque principal
+
+### ⚙️ Script :
+`/home/riuk/admin/scripts/monitor_system.sh`
+
+### 🧠 Fonctionnement :
+- Le script vérifie :
+  - le **taux d’utilisation CPU** (`top`)
+  - la **mémoire vive utilisée** (`free`)
+  - l’**espace disque** (`df`)
+- Compare les valeurs à des seuils critiques :
+  - CPU > 80%
+  - RAM > 85%
+  - DISQUE > 90%
+- Si une alerte est détectée :
+  - un message rouge s’affiche dans le terminal
+  - un log est enregistré dans `logs/system_monitor.log`
+
+### 💾 Exemple de sortie :
+CPU OK : 23%
+RAM OK : 42%
+Disque OK : 56%
+Les résultats ont été enregistrés dans : /home/riuk/admin/logs/system_monitor.log

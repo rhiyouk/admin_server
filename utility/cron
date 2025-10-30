@@ -1,6 +1,6 @@
 #CRON AUTOMATISATION
 #COMMANDE POUR FAIRE UNE SAUVEGARDE CHAQUE JOUR 
-
+#crontab -e
 0 1 * * * ~/admin/scripts/backup_users.sh >> ~/admin/logs/backup.log 2>&1
 0 3 * * 0 /home/user/admin/security/secure_permissions.sh >> /home/user/admin/logs/security.log 2>&1
 
@@ -11,3 +11,6 @@ sudo chmod 755 /home/user/admin/scripts/*.sh
 
 #INSTALLATION UFW FIREWALL
 sudo apt update && sudo apt install ufw -y
+
+#Pour exécuter ce script automatiquement toutes les heures :
+0 * * * * /home/riuk/admin/scripts/monitor_system.sh
